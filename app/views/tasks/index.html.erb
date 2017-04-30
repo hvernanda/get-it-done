@@ -1,0 +1,9 @@
+<h2>Task List</h2>
+
+<%= %> // statement nya bakal diprint ke html nya
+<% @tasks.each do |task|  %>
+  <h4><%= task.title %></h4>
+  <p><% task.description %></p>
+<% end %>
+
+<%= link_to 'Create task', new_task_path, class: 'btn btn-primary' %>
